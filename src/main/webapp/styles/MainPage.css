@@ -1,0 +1,151 @@
+.bcground{
+    background: goldenrod;
+}
+
+
+/* Табличная вёрстка */
+#layout {
+    width: 100%;
+    height: 650px;
+}
+
+
+/* Центрирование, отлипание столбцов от ячеек, выравнивание содержимого ячеек */
+td {
+    padding: 8px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Шапка сайта (столбец): высота, выравнивание содержимого, центрирование текста */
+#cap {
+    height: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Шапка сайта (блок с текстом): настройка шрифта */
+#capBlock {
+    font-family: Century Schoolbook, monospace;
+    font-size: 28px;
+    color: black;
+}
+
+/* Основные данные (столбец): высота, ширина */
+#data {
+    height: 200px;
+    width: 120px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/* Столбик с выбором Y и R */
+#choosingColumn {
+    width: 450px;
+}
+
+
+/*Оформление кнопок при выборе координаты X*/
+.radioX label{
+    display: block;
+    width: 200px;
+    padding: 3px;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+}
+/*Отключить чекбоксы*/
+.radioX input[type="radio"] {
+    display: none;
+}
+/*Выделение кнопки при нажатии*/
+.radioX input[type="radio"]:checked + label{
+    border: solid 3px purple;
+}
+
+.radioR{
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+
+/*Оформление кнопок при выборе координаты R*/
+.radioR label{
+    display: block;
+    width: 100px;
+    padding: 3px;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+}
+/*Отключить чекбоксы*/
+.radioR input[type="radio"] {
+    display: none;
+}
+/*Выделение кнопки при нажатии*/
+.radioR input[type="radio"]:checked + label{
+    border: solid 3px purple;
+}
+
+
+/* Кнопка отправки формы: тени + высота + округление границ */
+#accButton {
+    box-shadow: 3px 3px 10px 2px black;
+    height: 50px;
+    border-radius: 10px 10px;
+    font-weight: bold;
+}
+
+/* Кнопка нажата: тени убираются (эффект нажатия на объемную кнопку) */
+#accButton:active {
+    box-shadow: none;
+}
+
+/* Таблица данных */
+#dataTable {
+    width: 100%;
+    height: 30%;
+    border-spacing: 9px 7px;
+}
+
+/* Заголовок таблицы данных */
+#capRow {
+    background-color: #1582ff;
+    color: aliceblue;
+}
+
+/* Строки и столбцы таблицы данных (отступы, границы, тени) */
+#dataTable tr td {
+
+    padding: 5px;
+    border: 1px solid black;
+
+}
+
+
+/* Окно с ошибками */
+.errDialog {
+    background: purple;
+    outline: red ridge 4px;
+    height: 100px;
+    width: 300px;
+    font-weight: bold;
+    font-family: Century Schoolbook, monospace;
+    font-size: 18px;
+    color: blue;
+    margin: 0 auto;
+}
+
+
+
+/* Настройка поля ввода для координаты Y */
+#yText {
+    margin-block-start: 10px;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+/* Поведение поля ввода координаты Y при получении фокуса */
+#yText:focus {
+    background-color: #1582ff;
+}
+
